@@ -15,7 +15,7 @@ def setup_api():
                         permissions['consumer_secret'])
     auth.set_access_token(permissions['access_token'],
                           permissions['access_secret'])
-    
+
     return tweepy.API(auth)
 
 def print_timeline(api):
